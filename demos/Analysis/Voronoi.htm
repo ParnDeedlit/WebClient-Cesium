@@ -6,7 +6,7 @@
   <title>Measure distances</title>
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
   <script include="jquery" src="../../libs/zondyclient/include-lib.js"></script>
-  <script include="geohash,geojson,turf" src="../../libs/zondyclient/include-leaflet.js"></script>
+  <script include="geohash,geojson,turf" src="../../libs/zondyclient/include-cesium.js"></script>
   <style>
     body {
       margin: 0;
@@ -27,18 +27,17 @@
   <div id='map'></div>
 
   <script>
-    var map = L.map('map').setView([30.59418345, 114.289398], 8);
+    var map = new Cesium.Viewer('map');
     var geojson;
+
     initMap();
     loadData();
 
     function initMap() {
-      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' +
-        'sk.eyJ1IjoiY2hlbmdkYWRhIiwiYSI6ImNqZDFjaGo0ZjFzcnoyeG54enoxdnNuZHUifQ.hTWXXBUQ0wdGeuDF3GWeUw', {
-          attribution: '<a href="#">AMikealson</a>',
-          maxZoom: 18,
-          id: 'mapbox.streets'
-        }).addTo(map);
+      var center = Cesium.Cartesian3.fromDegrees(114.289398, 30.59418345, 500000);
+      map.scene.camera.setView({
+        destination: center
+      });
     }
 
     function loadData() {
@@ -56,7 +55,8 @@
     }
 
     function updateView(data) {
-      L.geoJson(data).addTo(map);
+      var voronoidatasource = map.dataSources.add(Cesium.GeoJsonDataSource.load(data));
+      map.flyTo(voronoidatasource);
     }
   </script>
 
