@@ -1,0 +1,319 @@
+{
+    "took": 5,
+    "timed_out": false,
+    "_shards": {
+        "total": 5,
+        "successful": 5,
+        "failed": 0
+    },
+    "hits": {
+        "total": 184,
+        "max_score": 0,
+        "hits": []
+    },
+    "aggregations": {
+        "mapExtent": {
+            "doc_count": 184,
+            "geohash": {
+                "buckets": [
+                    {
+                        "key": "wqjd8yc",
+                        "doc_count": 14
+                    },
+                    {
+                        "key": "wqjd8y9",
+                        "doc_count": 11
+                    },
+                    {
+                        "key": "wmyykty",
+                        "doc_count": 8
+                    },
+                    {
+                        "key": "wqje17p",
+                        "doc_count": 7
+                    },
+                    {
+                        "key": "wqje17n",
+                        "doc_count": 6
+                    },
+                    {
+                        "key": "wmyyktv",
+                        "doc_count": 6
+                    },
+                    {
+                        "key": "wqje17j",
+                        "doc_count": 5
+                    },
+                    {
+                        "key": "wqjdr79",
+                        "doc_count": 5
+                    },
+                    {
+                        "key": "wqjd8yd",
+                        "doc_count": 5
+                    },
+                    {
+                        "key": "wqj1ghr",
+                        "doc_count": 5
+                    },
+                    {
+                        "key": "wmyyktu",
+                        "doc_count": 5
+                    },
+                    {
+                        "key": "wqju75t",
+                        "doc_count": 4
+                    },
+                    {
+                        "key": "wqjd8yf",
+                        "doc_count": 4
+                    },
+                    {
+                        "key": "wqhfgud",
+                        "doc_count": 4
+                    },
+                    {
+                        "key": "wmyyktg",
+                        "doc_count": 4
+                    },
+                    {
+                        "key": "wqj6xwx",
+                        "doc_count": 3
+                    },
+                    {
+                        "key": "wqj6tv1",
+                        "doc_count": 3
+                    },
+                    {
+                        "key": "wqj6rk5",
+                        "doc_count": 3
+                    },
+                    {
+                        "key": "wqhk7uu",
+                        "doc_count": 3
+                    },
+                    {
+                        "key": "wqhfgkz",
+                        "doc_count": 3
+                    },
+                    {
+                        "key": "wmyykwp",
+                        "doc_count": 3
+                    },
+                    {
+                        "key": "wmyykt9",
+                        "doc_count": 3
+                    },
+                    {
+                        "key": "wmyykt8",
+                        "doc_count": 3
+                    },
+                    {
+                        "key": "wqju696",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "wqjtjyr",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "wqjtj83",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "wqjew74",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "wqjet3k",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "wqjesf2",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "wqj6y7e",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "wqj6y77",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "wqj6q6b",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "wqhg560",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "wqhg55e",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "wqhfgt9",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "wqhfgky",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "wqhf7y8",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "wqh5w1u",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "wmyyktd",
+                        "doc_count": 2
+                    },
+                    {
+                        "key": "wqtbd62",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqt3dk3",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqq26t3",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqnnj88",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqm2mj9",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqjtwtp",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqjtsmg",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqjtkcn",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqjtjz9",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqjex4b",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqjetke",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqjetk3",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqjetec",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqjesfs",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqje16z",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqjdr5w",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqjdbt9",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqj6xzx",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqj6vvy",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqj6v77",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqj6v75",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqj6tje",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqj6q5v",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqj6q5t",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqj6q1t",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqj5hgb",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqj5hex",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqj1z89",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqhfyth",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqhfbrd",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqhf7wx",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqh7c27",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wqh76zr",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wmyyktf",
+                        "doc_count": 1
+                    },
+                    {
+                        "key": "wmyykmx",
+                        "doc_count": 1
+                    }
+                ]
+            }
+        }
+    }
+}

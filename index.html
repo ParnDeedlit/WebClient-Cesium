@@ -1,0 +1,273 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Leaflet示例集锦</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- 强制360浏览器用WebKit内核 -->
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/github-markdown.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <!-- 开源库jQuery -->
+    <script src="libs/jquery-1.11.2.min.js"></script>
+    <!-- 第三方插件库（复制功能插件） -->
+    <script src="libs/jqueryzclip/jquery.zclip.js" type="text/javascript"></script>    <!-- 源码编辑器样式文件与插件库 -->
+    <link type="text/css" rel="stylesheet" href="libs/codemirror/lib/codemirror.css" />
+    <script type="text/javascript" src="libs/codemirror/lib/codemirror.js"></script>
+    <script type="text/javascript" src="libs/codemirror/mode/xml/xml.js"></script>
+    <script type="text/javascript" src="libs/codemirror/mode/javascript/javascript.js"></script>
+    <script type="text/javascript" src="libs/codemirror/mode/css/css.js"></script>
+    <script type="text/javascript" src="libs/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script type="text/javascript" src="libs/codemirror/addon/edit/matchbrackets.js"></script>
+    <!-- bootstrap - markdown css-->
+    <script src="libs/bootstrap/bootstrap.min.js"></script>
+    <!-- markdown解释器 -->
+    <script type="text/javascript" src="libs/markdown/prism.js"></script>
+    <script type="text/javascript" src="libs/markdown/marked.min.js"></script>
+    <!-- 系统首页功能库 -->
+    <script type="text/javascript" src="js/init.js"></script>
+</head>
+<body>
+    <div id="header">
+        <a class="logo">
+            <img src="images/MapGIS-logo-white.png" />
+            <!--<img src="images/MapGIS logo边线样式.png" />-->
+            <span> Leaflet 示例集锦</span>
+        </a>
+    </div>
+    <div id="content">
+        <div class="leftsidebar_box">
+            <div class="line"></div>
+            <dl class="control">
+                <dt class="first_dt">Leaflet教程<img src="images/left/select_xl01.png" /></dt>
+                <dd onclick="setCore('E01Leaflet快速上手指导', 'Offical', 'Offical/E01Leaflet快速上手指导.md')">Leaflet快速上手指导</dd>
+                <dd onclick="setCore('E02leaflet of mobile', 'Offical','Offical/E02leaflet of mobile.md')">移动端叶子</dd>
+                <dd onclick="setCore('E03maker icon', 'Offical', 'Offical/E03maker icon.md')">图标标记</dd>
+                <dd onclick="setCore('E04Geojson with leaflet', 'Offical', 'Offical/E04Geojson with leaflet.md')"> 使用Geojson</dd>
+                <dd onclick="setCore('E05zoomlever', 'Offical', 'Offical/E05zoomlever.md')">缩放级别</dd>
+                <dd onclick="setCore('E06layer control', 'Offical', 'Offical/E06layer control.md')">图层控制</dd>
+                <dd onclick="setCore('E07Choropleth Map', 'Offical', 'Offical/E07Choropleth Map.md')">交互式分级统计图</dd>
+                <dd onclick="setCore('E07Choropleth-BigData', 'Offical', 'Offical/E07Choropleth Map.md')">大数据分级统计图</dd>
+                <dd onclick="setCore('E08Non-geographical maps', 'Offical', 'Offical/E08Non-geographical maps.md')">非地理地图</dd>
+                <dd onclick="setCore('E09WMS and TMS', 'Offical', 'Offical/E09WMS and TMS.md')">WMS and TMS</dd>
+                <dd onclick="setCore('E10Working with map panes', 'Offical', 'Offical/E10Working with map panes.md')">图窗格</dd>
+                <dd onclick="setCore('E11Showing video files', 'Offical', 'Offical/E11Showing video files.md')">展示影音文件</dd>
+                <dd onclick="setCore('E12Extending Leaflet Class Theory', 'Offical', 'Offical/E12Extending Leaflet Class Theory.md')">Leaflet Class</dd>
+                <dd onclick="setCore('E13Extending Leaflet (Layers)', 'Offical', 'Offical/E13Extending Leaflet (Layers).md')">Extending Leaflet (Layers)</dd>
+                <dd onclick="setCore('E14Extending Leaflet Handlers and Controls', 'Offical', 'Offical/E14Extending Leaflet Handlers and Controls.md')">leaflet处理和控制拓展</dd>
+            </dl>
+            <dl class="control">
+                <dt class="first_dt">GeoJSON专题<img src="images/left/select_xl01.png" /></dt>
+                <dd onclick="setCore('GeoPoint', 'Geojson', 'Geojson/E01GeoPoint.md')">Point(点)</dd>
+                <dd onclick="setCore('GeoLine', 'Geojson','Geojson/E02GeoLine.md')">Line(线)</dd>
+                <dd onclick="setCore('GeoPolygon', 'Geojson', 'Geojson/E03GeoPolygon.md')">Polygon(面)</dd>
+                <dd onclick="setCore('MultiPoint', 'Geojson', 'Geojson/E04MultiPoint.md')">MultiPoint(多点)</dd>
+                <dd onclick="setCore('MultiLineString', 'Geojson', 'Geojson/E05MultiLineString.md')">MultiLineString(多线)</dd>
+                <dd onclick="setCore('MultiPolygon', 'Geojson', 'Geojson/E06MultiPolygon.md')">MultiPolygon(多面)</dd>
+                <dd onclick="setCore('FeatureCollection', 'Geojson','Geojson/E07FeatureCollection.md')">FeatureCollection(特征集合)</dd>
+                <dd onclick="setCore('Transform', 'Geojson', 'Geojson/E08Transform.md')">地理数据转换</dd>
+                <dd onclick="setCore('解析Geojson字符串', 'Geojson', 'Geojson/E09解析Geojson字符串.md')">解析GeoJSON</dd>
+            </dl>
+            <dl class="control">
+                <dt class="first_dt">地图控件<img src="images/left/select_xl01.png" /></dt>
+                <dd onclick="setCore('Draw', 'MapControls', 'MapControls/E01Draw.md')">Draw</dd>
+                <dd onclick="setCore('Measurement', 'MapControls','MapControls/E02Measurement.md')">测量</dd>
+                <dd onclick="setCore('MousePosition', 'MapControls', 'MapControls/E03MousePosition_help.htm')">鼠标位置</dd>
+                <dd onclick="setCore('ScaleLine', 'MapControls', 'MapControls/E04ScaleLine_help.htm')"> 比例尺</dd>
+                <dd onclick="setCore('OverviewMap', 'MapControls', 'MapControls/E05OverviewMap_help.htm')">鹰 眼</dd>
+                <dd onclick="setCore('FullScreen', 'MapControls', 'MapControls/E06FullScreen.md')">FullScreen</dd>
+                <dd onclick="setCore('IconGlyph', 'MapControls', 'MapControls/E07IconGlyph.md')">IconGlyph</dd>
+                <dd onclick="setCore('Editable', 'MapControls', 'MapControls/E08Editable.md')">Editable</dd>
+                <dd onclick="setCore('Toolbar', 'MapControls', 'MapControls/E09Toolbar.md')">Toolbar</dd>
+                <dd onclick="setCore('PathDrag', 'MapControls', 'MapControls/E10PathDrag.md')">PathDrag</dd>
+                <dd onclick="setCore('Graticule', 'MapControls', 'MapControls/E11Graticule.md')">Graticule</dd>
+            </dl>
+            <dl class="MapOperation">
+                <dt>地图操作<img src="images/left/select_xl01.png" /></dt>
+                <dd onclick="setCore('Operation', 'MapOperation', 'MapOperation/E01Operation_help.htm')">地图操作</dd>
+                <dd onclick="setCore('setBackground', 'MapOperation', 'MapOperation/E02setBackground_help.htm')">设置地图背景</dd>
+                <dd onclick="setCore('MapPositioning', 'MapOperation', 'MapOperation/E03MapPositioning_help.htm')">地图定位</dd>
+                <dd onclick="setCore('setviewZoom', 'MapOperation', 'MapOperation/E04setviewZoom_help.htm')">显示级数</dd>
+                <dd onclick="setCore('viewWindowPosition', 'MapOperation', 'MapOperation/E05viewWindowPosition_help.htm')">视窗逻辑坐标</dd>
+                <dd onclick="setCore('Mapinformation', 'MapOperation', 'MapOperation/E06Mapinformation_help.htm')">地图域当前信息</dd>
+                <dd onclick="setCore('coutpicture', 'MapOperation', 'MapOperation/E07coutpicture_help.htm')">导出成图片</dd>
+                <dd onclick="setCore('coutPDF', 'MapOperation', 'MapOperation/E08coutPDF_help.htm')">导出成PDF</dd>
+                <dd onclick="setCore('MapEvent', 'MapOperation', 'MapOperation/E09MapEvent_help.htm')">地图事件</dd>
+                <dd onclick="setCore('LayerSearch', 'MapOperation', 'MapOperation/E10LayerSearch_help.htm')">图层探查</dd>
+                <dd onclick="setCore('LayersControl', 'MapOperation', 'MapOperation/E11LayersControl_help.htm')">图层层级控制</dd>
+                <dd onclick="setCore('LayerGroupControl', 'MapOperation', 'MapOperation/E12LayerGroupControl_help.htm')">图层组控制</dd>
+            </dl>
+            <dl class="GraphicOperation">
+                <dt>图形操作<img src="images/left/select_xl01.png" /></dt>
+                <dd onclick="setCore('GraphicDrawByPoint', 'GraphicOperation', 'GraphicOperation/E01GraphicDrawByPoint_help.htm')">坐标添加点</dd>
+                <dd onclick="setCore('GraphicDrawByLine', 'GraphicOperation', 'GraphicOperation/E02GraphicDrawByLine_help.htm')">坐标添加线</dd>
+                <dd onclick="setCore('GraphicDrawByCircle', 'GraphicOperation', 'GraphicOperation/E03GraphicDrawByCircle_help.htm')">坐标添加圆</dd>
+                <dd onclick="setCore('GraphicDrawBySquare', 'GraphicOperation', 'GraphicOperation/E04GraphicDrawBySquare_help.htm')">坐标添加正方形</dd>
+                <dd onclick="setCore('GraphicDrawByRectangle', 'GraphicOperation', 'GraphicOperation/E05GraphicDrawByRectangle_help.htm')">坐标添加矩形</dd>
+                <dd onclick="setCore('GraphicDrawByPolygon', 'GraphicOperation', 'GraphicOperation/E06GraphicDrawByPolygon_help.htm')">坐标添加多边形</dd>
+                <dd onclick="setCore('DrawFeatures', 'GraphicOperation', 'GraphicOperation/E07DrawFeatures_help.htm')">绘制几何图形</dd>
+                <dd onclick="setCore('FreehandDrawing', 'GraphicOperation', 'GraphicOperation/E08FreehandDrawing_help.htm')">绘制任意图形</dd>
+                <dd onclick="setCore('FeaturesStyle', 'GraphicOperation', 'GraphicOperation/E09FeaturesStyle_help.htm')">图形样式编辑</dd>
+                <dd onclick="setCore('ModifyFeatures', 'GraphicOperation', 'GraphicOperation/E10ModifyFeatures_help.htm')">图形交互编辑</dd>
+                <dd onclick="setCore('GetGeometryInfo', 'GraphicOperation', 'GraphicOperation/E11GetGeometryInfo_help.htm')">获取几何信息</dd>
+                <dd onclick="setCore('DrawLineArrows', 'GraphicOperation', 'GraphicOperation/E12DrawLineArrows_help.htm')">绘制箭头线</dd>
+            </dl>
+            <dl class="MapMarker">
+                <dt>地图标注<img src="images/left/select_xl01.png" /></dt>
+                <dd onclick="setCore('AddPicture', 'MapMarker', 'MapMarker/E01AddPicture_help.htm')">
+                    图片标注
+                </dd>
+                <dd onclick="setCore('AddText', 'MapMarker', 'MapMarker/E02AddText_help.htm')">
+                    文字标注
+                </dd>
+                <dd onclick="setCore('AddTextandPic', 'MapMarker', 'MapMarker/E03AddTextandPic_help.htm')">
+                    图文标注
+                </dd>
+                <dd onclick="setCore('AddPopup', 'MapMarker', 'MapMarker/E04AddPopup_help.htm')">
+                    popup弹出框
+                </dd>
+                <dd onclick="setCore('AddClusterLabels', 'MapMarker', 'MapMarker/E05AddClusterLabels_help.htm')">
+                    聚合标注
+                </dd>
+            </dl>
+            <dl class="Analysis">
+                <dt>空间分析<img src="images/left/select_xl01.png" /></dt>
+                <dd onclick="setCore('Buffer', 'Analysis', 'Analysis/Buffer.md')">
+                    缓冲区分析
+                </dd>
+                <dd onclick="setCore('Tin', 'Analysis', 'Analysis/Tin.md')">
+                    TIN三角网分析
+                </dd>
+                <dd onclick="setCore('Voronoi', 'Analysis', 'Analysis/Voronoi.md')">
+                    泰森多边形分析
+                </dd>
+                <dd onclick="setCore('Centroid', 'Analysis', 'Analysis/Centroid.md')">
+                    中心点提取
+                </dd>
+                <dd onclick="setCore('Along', 'Analysis', 'Analysis/Along.md')">
+                    插值分析
+                </dd>
+            </dl>
+            <dl class="DataView">
+                <dt>可视化表达<img src="images/left/select_xl01.png" /></dt>
+                <dd onclick="setCore('Heater', 'DataView', 'DataView/Heater.md')">
+                    热力图
+                </dd>
+                <!-- <dd onclick="setCore('Heater-Big', 'DataView', 'DataView/AnimateMarker.md')">
+                    热力图-大数据
+                </dd>
+                <dd onclick="setCore('Cluster-Big', 'DataView', 'DataView/AnimateMarker.md')">
+                    聚类图-大数据
+                </dd> -->
+                <dd onclick="setCore('Cluster-Base', 'DataView', 'DataView/Cluster-Base.md')">
+                    聚类图-基本使用
+                </dd>
+                <dd onclick="setCore('Cluster-Option', 'DataView', 'DataView/Cluster-Option.md')">
+                    聚类图-属性使用
+                </dd>
+                <dd onclick="setCore('Cluster-Event', 'DataView', 'DataView/Cluster-Method.md')">
+                    聚类图-事件使用
+                </dd>
+                <dd onclick="setCore('Animate-Marker', 'DataView', 'DataView/AnimateMarker.md')">
+                    动画轨迹-跟踪型
+                </dd>
+                <dd onclick="setCore('RealMove-Marker', 'DataView', 'DataView/AnimateMarker.md')">
+                    真实速度轨迹-跟踪型
+                </dd>
+                <dd onclick="setCore('Ant-Path', 'DataView', 'DataView/Ant-Path.md')">
+                    蚂蚁轨迹-展示型
+                </dd>
+                <dd onclick="setCore('Migrate', 'DataView', 'DataView/Migrate.md')">
+                    迁移轨迹-展示型
+                </dd>
+            </dl>
+            <dl class="MapV">
+              <dt>MapV<img src="images/left/select_xl01.png" /></dt>
+              <dd onclick="setCore('PointWeibo', 'MapV', 'MapV/PointWeibo.md')">点微博数据</dd>
+              <dd onclick="setCore('PointAnimate', 'MapV', 'MapV/PointAnimate.md')">点数据播放</dd>
+              <dd onclick="setCore('PointMutilAnimate', 'MapV', 'MapV/PointMutilAnimate.md')">点重叠播放</dd>
+              <dd onclick="setCore('Tracker', 'MapV', 'MapV/Tracker.md')">动态轨迹</dd>
+              <dd onclick="setCore('Convergence', 'MapV', 'MapV/Convergence.md')">汇聚轨迹</dd>
+              <dd onclick="setCore('SimpleMigrate', 'MapV', 'MapV/SimpleMigrate.md')">单一迁移轨迹</dd>
+              <dd onclick="setCore('Migrate', 'MapV', 'MapV/Migrate.md')">迁移轨迹</dd>
+              <dd onclick="setCore('TrackerLine', 'MapV', 'MapV/TrackerLine.md')">交通轨迹</dd>
+              <dd onclick="setCore('SimpleLine', 'MapV', 'MapV/SimpleLine.md')">单值颜色线</dd>
+              <dd onclick="setCore('MutilLine', 'MapV', 'MapV/MutilLine.md')">多值统计线</dd>
+              <dd onclick="setCore('HeaterLine', 'MapV', 'MapV/HeaterLine.md')">热力统计线</dd>
+              <dd onclick="setCore('MutilPolygon', 'MapV', 'MapV/MutilPolygon.md')">区数据渲染</dd>
+              <dd onclick="setCore('PointHoneycomb', 'MapV', 'MapV/PointHoneycomb.md')">蜂窝统计图</dd>
+              <dd onclick="setCore('PointGrid', 'MapV', 'MapV/PointGrid.md')">网格统计图</dd>
+              <dd onclick="setCore('PointHeater', 'MapV', 'MapV/PointHeater.md')">热力统计图</dd>
+            </dl>
+            <dl class="ElasticSearch">
+                <dt>ElasticSearch<img src="images/left/select_xl01.png" /></dt>
+                <dd onclick="setCore('Tracker', 'ElasticSearch', 'ElasticSearch/E01Heater_help.md')">
+                    时空查询-轨迹-mapgis api
+                </dd>
+                <dd onclick="setCore('Zondy-Grid', 'ElasticSearch', 'ElasticSearch/E01Heater_help.md')">
+                    时空查询-网格-mapgis api
+                </dd>
+                <dd onclick="setCore('Zondy-Heater', 'ElasticSearch', 'ElasticSearch/E01Heater_help.md')">
+                    时空查询-热力点-mapgis api
+                </dd>
+                <dd onclick="setCore('Geofence', 'ElasticSearch', 'ElasticSearch/GeoFence_help.md')">
+                    地理围栏-mapgis api
+                </dd>
+                <dd onclick="setCore('Els-Heater', 'ElasticSearch', 'ElasticSearch/E01Heater_help.md')">
+                    ELS查询-热力点
+                </dd>
+                <dd onclick="setCore('Els-Grid', 'ElasticSearch', 'ElasticSearch/E01Heater_help.md')">
+                    ELS查询-网格
+                </dd>
+                <dd onclick="setCore('Els-TrackerSort', 'ElasticSearch', 'ElasticSearch/E01Heater_help.md')">
+                    ELS查询-排序轨迹
+                </dd>
+                <dd onclick="setCore('Els-TrackerRange', 'ElasticSearch', 'ElasticSearch/E01Heater_help.md')">
+                    ELS查询-范围查询轨迹
+                </dd>
+                <dd onclick="setCore('Els-TrackerId', 'ElasticSearch', 'ElasticSearch/E01Heater_help.md')">
+                    ELS查询-id查询轨迹
+                </dd>
+                <dd onclick="setCore('Els-Geofence', 'ElasticSearch', 'ElasticSearch/E01Heater_help.md')">
+                    ELS查询-地理围栏
+                </dd>
+            </dl>
+        </div>
+        <div id="code_wrapper">
+            <div id="code_arrow" class="go_back">
+                <span title="显示代码">›</span>
+                <p title="隐藏代码">‹</p>
+            </div>
+            <div id="code_core">
+                <div class="code_head">
+                    <!--<a id="code_copy" class="" href="javascript:void(0);">复制</a>
+                    源代码编辑器-->
+
+                    <span id="coreHeader" class="s1" onclick="showCore();">源代码编辑器</span>
+                    <span id="interfaceHeader" class="s2" onclick="showInstruction();">接口说明</span>
+                    <!--<a id="code_copy" rel="#codes">复制</a>-->
+                    <a id="code_restore" onclick="reStore();">还原</a>
+                    <a id="code_run" onclick="run();">运行</a>
+                </div>
+
+                <div class="code_body">
+                    <!--源码显示界面-->
+                    <div id="coreContent">
+                        <textarea id="codes" rows="10" cols="30" name="codes"> </textarea>
+                    </div>
+                    <!--接口说明显示界面-->
+                    <div id="interfaceContent" class = "interfaceContent">
+                        <div id="interface_iframe" class = "interface_iframe" name="interface_iframe"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="iframe_wrapper">
+            <iframe id="container_iframe" name="container_iframe" scrolling="no"></iframe>
+        </div>
+    </div>
+</body>
+</html>

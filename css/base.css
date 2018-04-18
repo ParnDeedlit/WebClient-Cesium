@@ -1,0 +1,428 @@
+﻿body, html, div, ul, li, iframe, p, img {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {                    /*leaflet示例集锦*/
+    font-size: 14px;
+    color: #000;
+    font-family: "微软雅黑";
+}
+
+#header .logo span, #header .logo img, .leftsidebar_box,.s1,.s2 {    /*禁止文本选中*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+dl, dt, dd {
+    display: block;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#header {            /*=S 头部区域样式 */
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: absolute;
+    background-color: #0075C7;
+}
+
+#header .logo {
+        height: 50px;
+        float: left;
+        margin-top: 6px;
+        margin-left: 20px;
+        position: absolute;
+    }
+
+#header .logo img {
+            height: 37px;
+            width: 113px;
+        }
+
+#header .logo span {
+            display: block;
+            float: right;
+            color: #fff;
+            font-size: 120%;
+            /* font-weight: bold; */
+            margin: 9px 10px;
+            border-left: groove 1px rgba(255,255,255,0.5);
+            padding-left: 11px;
+        }
+
+#header a.help {
+        display: block;
+        float: right;
+        color: #fff;
+        line-height: 38px;
+        border-radius: 2px;
+        font-size: 16px;
+        padding: 0 16px;
+        margin: 10px 20px 0 0;
+        border: 1px solid #b1b1b1;
+    }
+
+a.help:hover, #page a.help:hover {
+    color: #0097db;
+    background-color: #339999;
+}
+
+a.help span {
+    padding-right: 10px;
+    display: block;
+    float: left;
+    font: italic bold 26px/38px "Times New Roman",Georgia,Serif,arial,sans-serif;
+}
+
+/*=E 头部区域样式 */
+
+/*=S 主体框架 */
+#content {
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    top: 49px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/*=E 主体框架 */
+
+/*=S 导航部分left */
+.leftsidebar_box {
+    min-width: 260px;
+    height: 100% !important;
+    overflow-y: scroll;
+    position: absolute;
+    background-color: #F7F9FD;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-image: url(../images/left/line_bg.png);
+    background-repeat: repeat-x;
+}
+
+.leftsidebar_box dt {
+    padding-left: 42px;
+    padding-right: 31px;
+    background-repeat: no-repeat;
+    background-position: 13px center;
+    background-size: 15px;
+    background-color: #F7F9FD;
+    color: black;
+    font-size: 14px;
+    position: relative;
+    line-height: 50px;
+    display: block;
+    cursor: pointer;
+}
+
+.leftsidebar_box dl {
+    border-bottom: groove 1px rgba(255,255,255,0.5);
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.leftsidebar_box dd {
+    /* color:#f5f5f5; */
+    background-color: #F7F9FD;
+    padding-left: 38px;
+    height: 34px;
+    line-height: 34px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.leftsidebar_box dd:before {
+        border-bottom: 1px dotted #b0b5c2;
+        content: "";
+        display: inline-block;
+        float: left;
+        width: 15px;
+        margin: -14px 0 0;
+        height: 32px;
+        border-left: 1px dotted #b0b5c2;
+        position: absolute;
+        left: 25px;
+    }
+
+
+
+    .leftsidebar_box dd:hover {
+        color: #0075C7;
+        font-weight: bold;
+        /*background-color:rgba(0,117,199,0.5)*/
+    }
+
+.leftsidebar_box dt img {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.leftsidebar_box dt {
+    background-image: url(../images/left/AddSign.png);
+}
+
+
+.leftsidebar_box dl dd:last-child {
+    padding-bottom: 10px;
+}
+/*=E 导航部分left */
+
+/*=S 源码部分 */
+#code_wrapper {
+    /*width: 468px;*/
+    /*width: 0;*/
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    z-index: 2;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    margin: 0 0 0 270px;
+}
+
+#code_core {                /*源代码编辑处样式*/
+    width: 468px;
+    overflow: hidden;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+#code_arrow {
+    width: 13px;
+    height: 94px;
+    background: #0075C7;
+    border: 1px solid #e5e5e5;
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin: -48px -29px 0 0;
+    cursor: pointer;
+    line-height: 88px;
+    font-size: 36px;
+    font-family: "Times";
+    text-align: center;
+    color: #fff;
+}
+
+    #code_arrow span {
+        display: block;
+    }
+
+    #code_arrow p {
+        display: none;
+        color: #0075C7;
+        margin: 0;
+    }
+
+    #code_arrow.go_back {
+        background: #fff;
+        color: #b1b1b1;
+    }
+
+        #code_arrow.go_back span {
+            display: none;
+        }
+
+        #code_arrow.go_back p {
+            display: block;
+        }
+
+.code_head {
+    height: 30px;
+    line-height: 41px;
+    background: #f5f5f5;
+    font-size: 14px;
+    padding: 0px 30px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+    .code_head a, #page .code_head a {
+        float: right;
+        display: block;
+        padding: 0px 10px;
+        color: #0097db;
+        margin-top: -4px;
+        font-size: 13px;
+    }
+
+        .code_head a:hover {
+            cursor: pointer;
+        }
+
+        .code_head a:hover, #page .code_head a:hover, #page a.zeroclipboard-is-hover {
+            color: #0097db;
+        }
+
+.code_body {
+    width: 100%;
+    position: absolute;
+    top: 31px;
+    bottom: 0;
+    background-color: white;
+}
+
+.CodeMirror-sizer {
+    font-family: "consolas";
+}
+
+#codes {
+    display: none;
+}
+
+.CodeMirror {
+    height: 100% !important;
+    bottom: 0;
+    position: absolute !important;
+    font-family: "Microsoft Yahei";
+    line-height: 20px;
+    font-size: 12px;
+    width: 100%;
+}
+/*=E 源码部分 */
+
+/*=S 地图容器部分 */
+.iframe_wrapper {
+    width: auto;
+    height: 100%;
+    border: none;
+    z-index: 1;
+    margin-left: 690px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+
+#container_iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background: #fff;
+}
+/*=E 地图容器部分 */
+
+/*=S 源码导航页部分 by liuruoli*/
+.s1 {
+    background-color: #F5F5F5;
+    float: left;
+    /*padding-left: 13px;
+    padding-right: 10px;*/
+    /*margin-left: 9px;*/
+    cursor: pointer;
+    height: 29px;
+    width: 70px;
+    border: 1px solid #DADADA;
+    font-size: 12px;
+    font-family: 'Microsoft YaHei';
+    text-align:center;
+    line-height: 29px;
+}
+
+#code_run {
+    background: url('../images/label/result.png') no-repeat 0 -10px;
+    color: #3189f3;
+    padding-left: 17px;
+}
+
+#code_restore {
+    background: url('../images/label/result.png') no-repeat 0 -34px;
+    color: #3189f3;
+    padding-left: 17px;
+}
+
+.s2 {
+    /*border-right: 1px solid #DADADA;
+    border-bottom: 1px solid #DADADA;*/
+    border: 1px solid #DADADA;
+    float: left;
+    /*padding-left: 10px;
+    padding-right: 10px;*/
+    /*margin-left: 20px;*/
+    cursor: pointer;
+    font-size: 12px;
+    font-weight:bold;
+    color:#0075C7;
+    width: 70px;
+    height: 29px;
+    text-align:center;
+    line-height: 29px;
+}
+
+    /*.s2::before {
+        content: "";
+        width: 84px;
+        height: 2px;
+        background-color: red;
+        position: absolute;
+        top: 28px;
+    }*/
+
+#interface_iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 1; /*margin-left: 220px;*/
+    position: absolute; /*top: 210px;*/
+    top: 0px; /*left:-7px;*/
+    bottom: 0px;
+    background: white;
+    overflow: auto;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+.interfaceContent .interface_iframe-body ul > li {
+  list-style-type: disc;
+}
+.interfaceContent .interface_iframe-body ol > li {
+  list-style-type: lower-roman;
+}
+
+#interfaceContent {
+    width: 100%;
+    height: 100%;
+}
+
+/*=S 滚动条样式部分*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px #d1cfcf;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background: #f7f7f7;
+    -webkit-box-shadow: inset 0 0 6px #d1cfcf;
+}
+/*=E 滚动条样式部分*/
